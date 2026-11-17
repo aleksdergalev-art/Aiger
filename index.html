@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ООО «Айгер» — контрактное производство, инжиниринг, ПГС в Челябинске</title>
+<meta name="description" content="ООО «Айгер», Челябинск: контрактное производство, машиностроительный инжиниринг, промышленное и гражданское строительство.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ООО «Айгер» — контрактное производство, инжиниринг, ПГС">
+<meta property="og:description" content="Контрактное производство, инжиниринг и строительство в Челябинске.">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 6 60 56H4z' fill='%23164A73'/%3E%3Cpath d='M32 16 42 33l-4-3-6 5-6-5-4 3z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"ООО «Айгер»","legalName":"Общество с ограниченной ответственностью «Айгер»","taxID":"7453367793","vatID":"7453367793","telephone":"+79090751814","email":"2334998mail@gmail.com","address":{"@type":"PostalAddress","postalCode":"454080","addressRegion":"Челябинская область","addressLocality":"Челябинск","streetAddress":"ул. Клары Цеткин, д. 11","addressCountry":"RU"},"identifier":[{"@type":"PropertyValue","name":"ОГРН","value":"1267400003199"},{"@type":"PropertyValue","name":"КПП","value":"745301001"}]}
+</script>
+<style>
+/* ===== Переменные ===== */
+:root{
+  --navy:#164A73; --deep:#0C2A44; --white:#fff; --mist:#F2F6FA; --accent:#5BA3D9;
+  --ink:#16222e; --muted:#4a5d6e; --line:rgba(22,74,115,.16);
+  --r:5px; --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2.5rem; --s5:5rem;
+  --head:'Montserrat','Oswald',Arial,sans-serif; --body:'Inter','Roboto',Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:400 1rem/1.65 var(--body);color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--head);font-weight:700;line-height:1.15;letter-spacing:-.01em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{width:min(1160px,100% - 2.5rem);margin-inline:auto}
+section{padding:var(--s5) 0}
+.ic{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.sr{position:absolute;left:-9999px}
+
+/* ===== Кнопки ===== */
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.4rem;border-radius:var(--r);font:600 .95rem var(--head);text-decoration:none;border:2px solid var(--accent);background:var(--accent);color:var(--deep);cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:#fff;border-color:#fff}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.btn.ghost:hover{background:#fff;color:var(--deep)}
+.btn.dark{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn.dark:hover{background:var(--deep);border-color:var(--deep)}
+.btn.sm{padding:.45rem .9rem;font-size:.85rem}
+
+/* ===== Шапка ===== */
+header{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s}
+header.scrolled{background:var(--deep);box-shadow:0 2px 14px rgba(0,0,0,.28)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px;color:#fff}
+.brand{display:flex;align-items:center;gap:.65rem;text-decoration:none;font:700 1.35rem var(--head);letter-spacing:.06em}
+.brand svg{width:38px;height:34px}
+nav ul{display:flex;gap:2rem;list-style:none;padding:0}
+nav a{text-decoration:none;font-weight:500;padding:.3rem 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--accent)}
+.burger{display:none;background:none;border:0;color:#fff;padding:.5rem;cursor:pointer}
+.burger svg{width:28px;height:28px;stroke:#fff;stroke-width:2;fill:none}
+.cta-h{display:none}
+@media(min-width:900px){.cta-h{display:inline-flex}}
+@media(max-width:899px){
+  .burger{display:block}
+  nav{position:absolute;top:68px;left:0;right:0;background:var(--deep);display:none;padding:1rem 1.25rem 1.5rem}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:.5rem}
+  nav a{display:block;padding:.7rem 0}
+}
+
+/* ===== Hero ===== */
+#home{min-height:100vh;min-height:100svh;display:flex;align-items:center;color:#fff;padding:110px 0 var(--s4);position:relative;overflow:hidden;background:linear-gradient(160deg,var(--navy) 0%,var(--deep) 70%)}
+.bp{position:absolute;inset:0;width:100%;height:100%;opacity:.9;pointer-events:none}
+.bp *{vector-effect:non-scaling-stroke}
+.bp .l{fill:none;stroke:#9cc9ea;stroke-opacity:.28;stroke-width:1.2}
+.bp .c{fill:none;stroke:#9cc9ea;stroke-opacity:.2;stroke-width:1;stroke-dasharray:14 4 2 4}
+.bp .d{fill:none;stroke:#fff;stroke-opacity:.22;stroke-width:1}
+.bp .t{fill:#cfe5f6;fill-opacity:.4;font:11px var(--body)}
+.bp .dr{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 5s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.bp .px{animation:drift 40s linear infinite alternate}
+@keyframes drift{to{transform:translate(-30px,14px)}}
+.hero-in{position:relative;max-width:760px}
+#home h1{font-size:clamp(2.1rem,6vw,3.9rem);margin-bottom:var(--s3)}
+#home .lead{font-size:clamp(1.05rem,2.2vw,1.3rem);color:#dbe9f5;max-width:34em;margin-bottom:var(--s4)}
+.btns{display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:var(--s5)}
+.adv{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1.25rem;border-top:1px solid rgba(255,255,255,.2);padding-top:var(--s3);max-width:640px}
+.adv div{display:flex;align-items:center;gap:.75rem;font:600 1rem var(--head)}
+.adv .ic{color:var(--accent)}
+
+/* ===== Общие заголовки ===== */
+.h2{font-size:clamp(1.7rem,4vw,2.5rem);margin-bottom:var(--s3);color:var(--navy)}
+.h2::after{content:"";display:block;width:56px;height:3px;background:var(--accent);margin-top:.9rem}
+.light{background:var(--mist)}
+
+/* ===== О нас ===== */
+.about{display:grid;gap:var(--s4);grid-template-columns:1fr}
+.about p{font-size:1.15rem;max-width:36em}
+.cards3{display:grid;gap:1rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:var(--s3)}
+.card .ic{color:var(--navy);width:34px;height:34px;margin-bottom:.8rem}
+.card h3{font-size:1.1rem;margin-bottom:.35rem;color:var(--navy)}
+.card p{font-size:.95rem;color:var(--muted)}
+@media(min-width:900px){.about{grid-template-columns:1fr 1fr;align-items:start}}
+
+/* ===== Услуги ===== */
+.sub{margin-top:var(--s5)}
+.sub:first-of-type{margin-top:var(--s4)}
+.sub h3{font-size:1.5rem;color:var(--navy);margin-bottom:.4rem}
+.sub>p{color:var(--muted);margin-bottom:var(--s3);max-width:40em}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.fig{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin:0}
+.fig .pic{display:block;width:100%;aspect-ratio:4/3;background:var(--deep);padding:0;border:0;color:#9cc9ea}
+.fig svg.pic-s{width:100%;height:100%;display:block}
+.fig figcaption{padding:.8rem 1rem;font:600 .95rem var(--head);color:var(--navy)}
+button.pic{cursor:zoom-in}
+.eng .card{position:relative;padding-top:4.2rem}
+.eng .num{position:absolute;top:.9rem;left:var(--s3);font:700 2.6rem/1 var(--head);color:var(--accent)}
+.eng .ic{position:absolute;top:1.2rem;right:var(--s3);margin:0}
+
+/* ===== Контакты ===== */
+#contacts{background:var(--deep);color:#fff}
+#contacts .h2{color:#fff}
+.cols{display:grid;gap:var(--s4)}
+@media(min-width:900px){.cols{grid-template-columns:1fr 1fr}}
+.req{list-style:none;padding:0;display:grid;gap:1rem}
+.req li{display:flex;gap:.8rem;align-items:flex-start}
+.req .ic{color:var(--accent);margin-top:2px}
+.req small{display:block;color:#a9c4da;font-size:.82rem}
+.req a{color:#fff}
+.req code{font:500 .92rem var(--body);word-break:break-all}
+.row{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.5rem;align-items:center}
+.cp{background:transparent;border:1px solid rgba(255,255,255,.45);color:#fff;border-radius:var(--r);padding:.2rem .6rem;font:500 .8rem var(--body);cursor:pointer}
+.cp:hover{background:#fff;color:var(--deep)}
+form{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);border-radius:var(--r);padding:var(--s3);display:grid;gap:1rem}
+label{display:grid;gap:.3rem;font-weight:500;font-size:.92rem}
+input[type=text],input[type=tel],input[type=email],textarea{font:inherit;padding:.7rem .8rem;border-radius:var(--r);border:1.5px solid #8fb2cf;background:#fff;color:var(--ink);width:100%}
+textarea{min-height:120px;resize:vertical}
+.err{color:#ffd2cc;font-size:.82rem;min-height:1em}
+[aria-invalid=true]{border-color:#e07a6e!important}
+.chk{display:flex;gap:.6rem;align-items:flex-start;font-weight:400;font-size:.85rem;color:#dbe9f5}
+.chk input{margin-top:.2rem;width:18px;height:18px;accent-color:var(--accent)}
+.ok{display:none;background:#e8f3fb;color:var(--deep);padding:1rem;border-radius:var(--r);font-weight:500}
+.map{margin-top:var(--s4);border:1px solid rgba(255,255,255,.2);border-radius:var(--r);min-height:240px;display:grid;place-content:center;justify-items:center;gap:1rem;text-align:center;padding:var(--s3);background:
+  linear-gradient(rgba(156,201,234,.12) 1px,transparent 1px) 0 0/32px 32px,linear-gradient(90deg,rgba(156,201,234,.12) 1px,transparent 1px) 0 0/32px 32px,rgba(255,255,255,.04)}
+/* Чтобы встроить карту: замените .map на <iframe src="URL виджета Яндекс Карт или 2ГИС" width="100%" height="360" loading="lazy" title="Карта"></iframe> */
+
+/* ===== Футер ===== */
+footer{background:#071b2e;color:#c3d6e6;padding:var(--s4) 0 var(--s3);font-size:.88rem}
+.f1{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:space-between;align-items:center;margin-bottom:var(--s3)}
+footer .brand{color:#fff;font-size:1.15rem}
+footer ul{display:flex;gap:1.5rem;list-style:none;padding:0;flex-wrap:wrap}
+footer a{text-decoration:none}footer a:hover{color:var(--accent)}
+footer p+p{margin-top:.3rem;color:#9ab4c8}
+
+/* ===== Lightbox ===== */
+dialog{border:0;border-radius:var(--r);padding:0;background:var(--deep);width:min(920px,94vw);color:#fff}
+dialog::backdrop{background:rgba(5,15,25,.85)}
+dialog .v{aspect-ratio:4/3;display:block}
+dialog .v>*{width:100%;height:100%;object-fit:contain;display:block}
+dialog .cap{padding:.8rem 1rem;display:flex;justify-content:space-between;align-items:center}
+
+/* ===== Появление ===== */
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .bp .dr{animation:none;stroke-dashoffset:0}.bp .px{animation:none}
+  .js .rv{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+<a class="sr" href="#main">К содержимому</a>
+
+<!-- ===== SVG-спрайт: иконки и иллюстрации деталей ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="logo" viewBox="0 0 64 56"><path d="M32 2 62 54H2z" fill="#164A73"/><path d="M32 14 43 33l-4-3-7 6-7-6-4 3z" fill="#fff"/></symbol>
+<symbol id="gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2.5l1.6 2.4 2.8-.7.9 2.7 2.7.9-.7 2.8L21.7 12l-2.4 1.6.7 2.8-2.7.9-.9 2.7-2.8-.7L12 21.7l-1.6-2.4-2.8.7-.9-2.7-2.7-.9.7-2.8L2.3 12l2.4-1.6-.7-2.8 2.7-.9.9-2.7 2.8.7z"/></symbol>
+<symbol id="draft" viewBox="0 0 24 24"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 9v12"/><circle cx="15" cy="15" r="2.5"/></symbol>
+<symbol id="hat" viewBox="0 0 24 24"><path d="M3 17h18M5 17a7 7 0 0114 0M12 6v5M9 8.5v2.5M15 8.5v2.5M3 17v2h18v-2"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.800 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+<symbol id="tel" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.500a11 11 0 006 6L16 13l5 2v4a2 2 0 01-2 2A16 16 0 013 5a2 2 0 012-2z"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="doc" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></symbol>
+<symbol id="box" viewBox="0 0 24 24"><path d="M12 3l9 5v8l-9 5-9-5V8z"/><path d="M3 8l9 5 9-5M12 13v8"/></symbol>
+<symbol id="cog" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M8 20h8M12 16v4M7 9h4M7 12h7"/></symbol>
+<symbol id="rev" viewBox="0 0 24 24"><path d="M20 12a8 8 0 10-3 6.200"/><path d="M20 5v5h-5"/></symbol>
+<symbol id="prod" viewBox="0 0 24 24"><path d="M3 21V10l6 4v-4l6 4V6h6v15z"/></symbol>
+<!-- Placeholder-иллюстрации деталей (viewBox 160x120) -->
+<symbol id="p-lamp" viewBox="0 0 160 120"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M40 90V50q0-22 40-22t40 22v40z"/><ellipse cx="80" cy="90" rx="40" ry="8"/><path d="M60 60h40M60 72h40" stroke-opacity=".5"/><path d="M80 14v108M20 90h120" stroke-dasharray="8 3 2 3" stroke-opacity=".5"/><path d="M40 104h80M40 100v8M120 100v8" stroke-opacity=".6"/></g></symbol>
+<symbol id="p-bronze" viewBox="0 0 160 120"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="35" y="30" width="90" height="50" rx="3"/><circle cx="80" cy="55" r="16"/><circle cx="80" cy="55" r="7"/><path d="M35 94h90M35 90v8M125 90v8M80 14v82M22 55h116" stroke-dasharray="8 3 2 3" stroke-opacity=".5"/></g></symbol>
+<symbol id="p-signal" viewBox="0 0 160 120"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="50" y="22" width="60" height="78" rx="6"/><circle cx="80" cy="50" r="14"/><path d="M72 50h16M80 42v16M60 80h40M60 88h24" stroke-opacity=".6"/><path d="M122 22v78M118 22h8M118 100h8" stroke-opacity=".6"/></g></symbol>
+<symbol id="p-ring" viewBox="0 0 160 120"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="80" cy="60" r="44"/><circle cx="80" cy="60" r="28"/><path d="M80 8v104M22 60h116" stroke-dasharray="8 3 2 3" stroke-opacity=".5"/><path d="M36 60l-10 0M124 60h10M52 28l44 64" stroke-opacity=".5"/></g></symbol>
+<symbol id="p-tool" viewBox="0 0 160 120"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M30 90V40h40V25h20v15h40v50z"/><circle cx="55" cy="65" r="8"/><circle cx="105" cy="65" r="8"/><path d="M30 78l30 12M30 62l45 28M45 90l45-50" stroke-opacity=".3"/></g></symbol>
+<symbol id="p-flange" viewBox="0 0 160 120"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="80" cy="60" r="46"/><circle cx="80" cy="60" r="20"/><circle cx="80" cy="22" r="5"/><circle cx="80" cy="98" r="5"/><circle cx="42" cy="60" r="5"/><circle cx="118" cy="60" r="5"/><path d="M80 6v108M20 60h120" stroke-dasharray="8 3 2 3" stroke-opacity=".5"/></g></symbol>
+<!-- Placeholder для фото объектов ПГС -->
+<symbol id="p-bld" viewBox="0 0 160 120"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 104h120M36 104V48h50v56M86 104V30h38v74"/><path d="M46 60h10M66 60h10M46 76h10M66 76h10M96 44h8M110 44h8M96 60h8M110 60h8M96 76h8M110 76h8"/><path d="M130 104V20h-30M130 20l-8 10" stroke-opacity=".5"/></g></symbol>
+</svg>
+
+<header id="top">
+  <div class="wrap bar">
+    <a class="brand" href="#home" aria-label="АЙГЕР — на главную"><svg aria-hidden="true"><use href="#logo"/></svg>АЙГЕР</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <nav id="nav" aria-label="Основная навигация">
+      <ul><li><a href="#home">Главная</a></li><li><a href="#about">О нас</a></li><li><a href="#services">Услуги</a></li><li><a href="#contacts">Контакты</a></li></ul>
+    </nav>
+    <a class="btn cta-h sm" href="#contacts">Связаться</a>
+  </div>
+</header>
+
+<main id="main">
+<!-- ===== ГЛАВНАЯ ===== -->
+<section id="home" aria-labelledby="h1">
+  <!-- Фон-чертёж: детали с размерными и осевыми линиями -->
+  <svg class="bp" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <pattern id="mm" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#9cc9ea" stroke-opacity=".08"/></pattern>
+      <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0v8" stroke="#9cc9ea" stroke-opacity=".22"/></pattern>
+      <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 1l9 4-9 4z" fill="#cfe5f6" fill-opacity=".5"/></marker>
+    </defs>
+    <rect width="1200" height="700" fill="url(#mm)"/>
+    <g class="px">
+      <!-- Кольцо / фланец -->
+      <circle class="l dr" pathLength="1" cx="900" cy="250" r="150"/>
+      <circle class="l dr" pathLength="1" cx="900" cy="250" r="88"/>
+      <circle class="l dr" pathLength="1" cx="900" cy="250" r="12"/>
+      <circle class="l dr" pathLength="1" cx="900" cy="130" r="14"/><circle class="l dr" pathLength="1" cx="900" cy="370" r="14"/>
+      <circle class="l dr" pathLength="1" cx="780" cy="250" r="14"/><circle class="l dr" pathLength="1" cx="1020" cy="250" r="14"/>
+      <path class="c" d="M900 70V430M720 250H1080"/>
+      <path class="d" marker-start="url(#ar)" marker-end="url(#ar)" d="M750 450H1050"/><path class="d" d="M750 400v60M1050 400v60"/>
+      <text class="t" x="880" y="445">Ø300</text>
+      <!-- Корпус (разрез со штриховкой) -->
+      <path class="l dr" pathLength="1" d="M560 520v-120q0-70 110-70t110 70v120z"/>
+      <path d="M580 520v-110q0-52 90-52t90 52v110z" fill="url(#hatch)" opacity=".7"/>
+      <path class="c" d="M670 300V560"/>
+      <path class="d" marker-start="url(#ar)" marker-end="url(#ar)" d="M560 580H780"/><text class="t" x="650" y="598">220</text>
+      <!-- Шестерня -->
+      <circle class="l dr" pathLength="1" cx="210" cy="500" r="95"/>
+      <circle class="l dr" pathLength="1" cx="210" cy="500" r="70"/>
+      <circle class="l dr" pathLength="1" cx="210" cy="500" r="22"/>
+      <path class="c" d="M70 500H350M210 360V640"/>
+      <path class="d" d="M210 500l67-67"/><text class="t" x="250" y="465">R95</text>
+      <!-- Оснастка -->
+      <path class="l dr" pathLength="1" d="M120 100h200v40h-60v70h-80v-70h-60z"/>
+      <path d="M180 140h80v70h-80z" fill="url(#hatch)" opacity=".6"/>
+      <path class="d" marker-start="url(#ar)" marker-end="url(#ar)" d="M120 70h200"/><text class="t" x="205" y="64">200</text>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="hero-in">
+      <h1 id="h1">Контрактное производство, инжиниринг и строительство</h1>
+      <p class="lead">ООО «Айгер» — динамично развивающаяся компания полного цикла</p>
+      <div class="btns"><a class="btn" href="#services">Наши услуги</a><a class="btn ghost" href="#contacts">Контакты</a></div>
+      <div class="adv">
+        <div><svg class="ic" aria-hidden="true"><use href="#gear"/></svg>Производство</div>
+        <div><svg class="ic" aria-hidden="true"><use href="#draft"/></svg>Инжиниринг</div>
+        <div><svg class="ic" aria-hidden="true"><use href="#hat"/></svg>ПГС</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== О НАС ===== -->
+<section id="about" class="light" aria-labelledby="h-about">
+  <div class="wrap about">
+    <div class="rv">
+      <h2 class="h2" id="h-about">О компании</h2>
+      <p>Общество с ограниченной ответственностью «Айгер» — динамично развивающаяся компания в сфере контрактного производства, машиностроительного инжиниринга, а также промышленного и гражданского строительства.</p>
+    </div>
+    <div class="cards3 rv">
+      <div class="card"><svg class="ic" aria-hidden="true"><use href="#gear"/></svg><h3>Контрактное производство</h3><p>Изготовление изделий по вашей документации.</p></div>
+      <div class="card"><svg class="ic" aria-hidden="true"><use href="#draft"/></svg><h3>Машиностроительный инжиниринг</h3><p>От конструкторской документации до управления производством.</p></div>
+      <div class="card"><svg class="ic" aria-hidden="true"><use href="#hat"/></svg><h3>Промышленное и гражданское строительство</h3><p>Услуги генерального подрядчика.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== УСЛУГИ ===== -->
+<section id="services" aria-labelledby="h-serv">
+  <div class="wrap">
+    <h2 class="h2" id="h-serv">Услуги</h2>
+
+    <div class="sub rv" id="production">
+      <h3>Контрактное производство</h3>
+      <p>Изделия, которые мы изготавливаем.</p>
+      <!-- ЗАМЕНА НА РЕАЛЬНЫЕ ФОТО: вместо <svg class="pic-s">…</svg> внутри каждой кнопки .pic вставьте
+           <img src="img/product-1.jpg" alt="Корпус светильника" loading="lazy"> -->
+      <div class="grid" data-gal>
+        <figure class="fig"><button class="pic" aria-label="Увеличить: Корпуса светильников"><svg class="pic-s" aria-hidden="true"><use href="#p-lamp"/></svg></button><figcaption>Корпуса светильников</figcaption></figure>
+        <figure class="fig"><button class="pic" aria-label="Увеличить: Бронзовые изделия"><svg class="pic-s" aria-hidden="true"><use href="#p-bronze"/></svg></button><figcaption>Бронзовые изделия</figcaption></figure>
+        <figure class="fig"><button class="pic" aria-label="Увеличить: Сигнализатор"><svg class="pic-s" aria-hidden="true"><use href="#p-signal"/></svg></button><figcaption>Сигнализатор</figcaption></figure>
+        <figure class="fig"><button class="pic" aria-label="Увеличить: Кольца"><svg class="pic-s" aria-hidden="true"><use href="#p-ring"/></svg></button><figcaption>Кольца</figcaption></figure>
+        <figure class="fig"><button class="pic" aria-label="Увеличить: Оснастка"><svg class="pic-s" aria-hidden="true"><use href="#p-tool"/></svg></button><figcaption>Оснастка</figcaption></figure>
+        <figure class="fig"><button class="pic" aria-label="Увеличить: Фланцы"><svg class="pic-s" aria-hidden="true"><use href="#p-flange"/></svg></button><figcaption>Изделие (заменить на реальное)</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="sub rv eng" id="engineering">
+      <h3>Инжиниринг</h3>
+      <p>Полный цикл инженерной подготовки.</p>
+      <div class="grid">
+        <div class="card"><span class="num">1</span><svg class="ic" aria-hidden="true"><use href="#draft"/></svg><h3>Разработка конструкторской документации</h3></div>
+        <div class="card"><span class="num">2</span><svg class="ic" aria-hidden="true"><use href="#box"/></svg><h3>Подготовка производства</h3></div>
+        <div class="card"><span class="num">3</span><svg class="ic" aria-hidden="true"><use href="#cog"/></svg><h3>Автоматизация и управление производством</h3></div>
+        <div class="card"><span class="num">4</span><svg class="ic" aria-hidden="true"><use href="#rev"/></svg><h3>Реверс-инжиниринг</h3></div>
+      </div>
+    </div>
+
+    <div class="sub rv" id="pgs">
+      <h3>ПГС — промышленное и гражданское строительство</h3>
+      <p>Услуги генерального подрядчика.</p>
+      <!-- ЗАМЕНА НА РЕАЛЬНЫЕ ФОТО: вместо <svg> в кнопке вставьте <img src="img/pgs-1.jpg" alt="Описание объекта" loading="lazy">. Лайтбокс подхватит <img> автоматически. -->
+      <div class="grid" data-gal>
+        <figure class="fig"><button class="pic" aria-label="Увеличить фото 1"><svg class="pic-s" aria-hidden="true"><use href="#p-bld"/></svg></button><figcaption>Пример работ 1</figcaption></figure>
+        <figure class="fig"><button class="pic" aria-label="Увеличить фото 2"><svg class="pic-s" aria-hidden="true"><use href="#p-bld"/></svg></button><figcaption>Пример работ 2</figcaption></figure>
+        <figure class="fig"><button class="pic" aria-label="Увеличить фото 3"><svg class="pic-s" aria-hidden="true"><use href="#p-bld"/></svg></button><figcaption>Пример работ 3</figcaption></figure>
+        <figure class="fig"><button class="pic" aria-label="Увеличить фото 4"><svg class="pic-s" aria-hidden="true"><use href="#p-bld"/></svg></button><figcaption>Пример работ 4</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== КОНТАКТЫ ===== -->
+<section id="contacts" aria-labelledby="h-cont">
+  <div class="wrap">
+    <h2 class="h2" id="h-cont">Контакты</h2>
+    <div class="cols">
+      <ul class="req rv">
+        <li><svg class="ic" aria-hidden="true"><use href="#doc"/></svg><div><strong>ООО «Айгер»</strong>
+          <small>ИНН/КПП</small><code id="inn">7453367793 / 745301001</code> <button class="cp" data-c="7453367793 / 745301001">Скопировать</button>
+          <small>ОГРН</small><code>1267400003199</code> <button class="cp" data-c="1267400003199">Скопировать</button></div></li>
+        <li><svg class="ic" aria-hidden="true"><use href="#pin"/></svg><div><small>🏠 Адрес</small>454080, Челябинская область, г. Челябинск, ул. Клары Цеткин, д. 11
+          <div class="row"><a class="btn sm ghost" target="_blank" rel="noopener" href="https://2gis.ru/chelyabinsk/search/%D0%9A%D0%BB%D0%B0%D1%80%D1%8B%20%D0%A6%D0%B5%D1%82%D0%BA%D0%B8%D0%BD%2011">Открыть в 2ГИС</a><a class="btn sm ghost" target="_blank" rel="noopener" href="https://yandex.ru/maps/?text=%D0%A7%D0%B5%D0%BB%D1%8F%D0%B1%D0%B8%D0%BD%D1%81%D0%BA%2C%20%D1%83%D0%BB.%20%D0%9A%D0%BB%D0%B0%D1%80%D1%8B%20%D0%A6%D0%B5%D1%82%D0%BA%D0%B8%D0%BD%2C%2011">Открыть в Яндекс Картах</a></div></div></li>
+        <li><svg class="ic" aria-hidden="true"><use href="#tel"/></svg><div><small>📞 Телефон</small><a href="tel:+79090751814">+7 909 075-18-14</a></div></li>
+        <li><svg class="ic" aria-hidden="true"><use href="#mail"/></svg><div><small>📧 Email</small><a href="mailto:2334998mail@gmail.com">2334998mail@gmail.com</a></div></li>
+        <li><svg class="ic" aria-hidden="true"><use href="#doc"/></svg><div><small>ЭДО: СБИС, идентификатор</small><code>2BEe3daed2574b94fc19bfc70cc096390f4</code> <button class="cp" data-c="2BEe3daed2574b94fc19bfc70cc096390f4">Скопировать</button></div></li>
+      </ul>
+
+      <!-- ФОРМА: отправка — заглушка. См. комментарий в скрипте ниже -->
+      <form id="f" class="rv" novalidate aria-label="Форма обратной связи">
+        <label>Имя<input type="text" name="name" autocomplete="name" required><span class="err"></span></label>
+        <label>Телефон<input type="tel" name="phone" autocomplete="tel" placeholder="+7 ___ ___-__-__" required><span class="err"></span></label>
+        <label>Email<input type="email" name="email" autocomplete="email"><span class="err"></span></label>
+        <label>Сообщение<textarea name="msg" required></textarea><span class="err"></span></label>
+        <label class="chk"><input type="checkbox" name="agree" required><span>Согласен на обработку персональных данных</span></label><span class="err" data-for="agree"></span>
+        <button class="btn" type="submit">Отправить</button>
+        <div class="ok" role="status" id="ok">Сообщение отправлено. Мы свяжемся с вами.</div>
+      </form>
+    </div>
+    <!-- Карта-заглушка со ссылкой; замените на iframe (см. комментарий в CSS у .map) -->
+    <div class="map"><svg class="ic" style="width:40px;height:40px;color:#5BA3D9" aria-hidden="true"><use href="#pin"/></svg><p>г. Челябинск, ул. Клары Цеткин, д. 11</p>
+      <a class="btn sm" target="_blank" rel="noopener" href="https://2gis.ru/chelyabinsk/search/%D0%9A%D0%BB%D0%B0%D1%80%D1%8B%20%D0%A6%D0%B5%D1%82%D0%BA%D0%B8%D0%BD%2011">Показать на карте</a></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f1">
+      <a class="brand" href="#home" aria-label="АЙГЕР — наверх"><svg width="32" height="28" aria-hidden="true"><use href="#logo"/></svg>АЙГЕР</a>
+      <ul><li><a href="#home">Главная</a></li><li><a href="#about">О нас</a></li><li><a href="#services">Услуги</a></li><li><a href="#contacts">Контакты</a></li></ul>
+    </div>
+    <p>© 2026 ООО «Айгер». Все права защищены.</p>
+    <p>ИНН/КПП 7453367793 / 745301001 · ОГРН 1267400003199 · 454080, г. Челябинск, ул. Клары Цеткин, д. 11</p>
+  </div>
+</footer>
+
+<dialog id="lb" aria-label="Просмотр изображения"><div class="v" id="lbv"></div><div class="cap"><span id="lbc"></span><button class="btn sm" id="lbx">Закрыть</button></div></dialog>
+
+<script>
+document.documentElement.classList.add('js');
+// Шапка и меню
+const hd=document.querySelector('header'),nav=document.getElementById('nav'),bg=document.querySelector('.burger');
+const sc=()=>hd.classList.toggle('scrolled',scrollY>30);sc();addEventListener('scroll',sc,{passive:true});
+bg.onclick=()=>{const o=nav.classList.toggle('open');bg.setAttribute('aria-expanded',o)};
+nav.addEventListener('click',e=>{if(e.target.closest('a')){nav.classList.remove('open');bg.setAttribute('aria-expanded',false)}});
+// Появление блоков
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+// Копирование
+document.querySelectorAll('.cp').forEach(b=>b.onclick=async()=>{
+  try{await navigator.clipboard.writeText(b.dataset.c);const t=b.textContent;b.textContent='Скопировано';setTimeout(()=>b.textContent=t,1500)}catch(e){prompt('Скопируйте:',b.dataset.c)}});
+// Lightbox (работает и с <svg>, и с <img>)
+const lb=document.getElementById('lb'),lv=document.getElementById('lbv'),lc=document.getElementById('lbc');
+document.querySelectorAll('[data-gal] .pic').forEach(b=>b.onclick=()=>{
+  const m=b.querySelector('img,svg').cloneNode(true);m.removeAttribute('class');m.removeAttribute('aria-hidden');
+  if(m.tagName==='svg'){m.setAttribute('viewBox','0 0 160 120');m.style.color='#9cc9ea'}
+  lv.replaceChildren(m);lc.textContent=b.parentElement.querySelector('figcaption').textContent;lb.showModal()});
+document.getElementById('lbx').onclick=()=>lb.close();
+lb.addEventListener('click',e=>{if(e.target===lb)lb.close()});
+// Форма: валидация на клиенте
+const f=document.getElementById('f');
+const rules={name:v=>v.trim().length>1||'Укажите имя',
+  phone:v=>v.replace(/\D/g,'').length>=10||'Укажите телефон полностью',
+  email:v=>!v||/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)||'Проверьте адрес email',
+  msg:v=>v.trim().length>4||'Напишите сообщение'};
+f.addEventListener('submit',e=>{
+  e.preventDefault();let bad=0;
+  for(const k in rules){const i=f.elements[k],r=rules[k](i.value),s=i.parentElement.querySelector('.err');
+    s.textContent=r===true?'':r;i.setAttribute('aria-invalid',r!==true);if(r!==true)bad++}
+  const a=f.elements.agree,ae=f.querySelector('[data-for=agree]');
+  ae.textContent=a.checked?'':'Необходимо согласие на обработку данных';a.setAttribute('aria-invalid',!a.checked);if(!a.checked)bad++;
+  if(bad)return;
+  /* ЗАГЛУШКА ОТПРАВКИ. Подключите обработчик, например Formspree:
+     fetch('https://formspree.io/f/ВАШ_ID',{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)})
+       .then(r=>r.ok?показать успех:показать ошибку);
+     или собственный backend: fetch('/api/feedback',{method:'POST',body:new FormData(f)}) */
+  f.reset();document.getElementById('ok').style.display='block';
+});
+</script>
+</body>
+</html>
